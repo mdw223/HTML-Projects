@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #0a0909;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: rgb(17, 79, 132);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+ul li {
+  display: inline;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600px;
+  color: white;
+  transition: 0.5s ease;
+}
+
+/* makes the element change color when hovered over */
+#navbar li a:hover,
+#navbar li a.active{
+  color: #ff0644;
+}
+
+/* this makes the underline in the navbar, its position is absolute to the relative navbar. We specified the first element by giving
+it a class called active.
+hover makes it so this happens when we hover over the element. after represents it occuring after we hover*/
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #ff0644;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#navbar li a.cart{
+  color: white;
+  font-size: 30px;
+}
