@@ -12,6 +12,16 @@ h1 {
   color: #0a0909;
 }
 
+.section-p1 {
+  padding: 40px 80px
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0a0909;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -19,6 +29,17 @@ h1 {
   padding: 20px 80px;
   background-color: rgb(17, 79, 132);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  left:0;
+  z-index: 999;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px; 
 }
 
 #navbar li{
@@ -62,4 +83,122 @@ hover makes it so this happens when we hover over the element. after represents 
 #navbar li a.cart{
   color: white;
   font-size: 30px;
+}
+
+#homead {
+  /*
+  background-image: url("images/black-man-phone-smile.jpg");
+  height: 60vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  background-size: cover;
+  position: relative;
+  */
+  position: relative;
+  background-color: white;
+}
+
+.man {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#homead h1 {
+  color: rgb(16, 100, 185);
+  padding-left: 8px;
+}
+
+#homead h2 {
+  width: 55%;
+  padding-left: 8px;
+}
+
+#homead button {
+  padding: 14px 80px 14px 65px;
+  background-color:rgb(16, 100, 185);
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  min-height:30px; 
+  min-width: 120px;
+
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+#feature-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+  right: 0;
+}
+
+#feature-text h2 {
+  font-size: 35px;
+  font-weight: 300px;
+  margin: auto;
+}
+
+
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box h6 {
+  display: inline-block;
+  color:white;
+  line-height: 1;
+  padding: 9px 8px 6px 8px;
+  border-radius: 4px;
+  background-color: rgb(16, 100, 185);
+}
+
+#feature .fe-box:nth-child(2) h6{
+  display: inline-block;
+  color:white;
+  line-height: 1;
+  padding: 9px 8px 6px 8px;
+  border-radius: 4px;
+  background-color: #ff0644;
+}
+
+#feature .fe-box:nth-child(4) h6{
+  display: inline-block;
+  color:white;
+  line-height: 1;
+  padding: 9px 8px 6px 8px;
+  border-radius: 4px;
+  background-color: #ff0644;
+}
+
+#feature .fe-box:nth-child(6) h6{
+  display: inline-block;
+  color:white;
+  line-height: 1;
+  padding: 9px 8px 6px 8px;
+  border-radius: 4px;
+  background-color: #ff0644;
 }
